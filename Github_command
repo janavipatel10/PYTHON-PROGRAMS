@@ -1,0 +1,21 @@
+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
+
+
+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
+
+
+
+
+
+
+cd GITHUB/
+git clone https://github.com/janavipatel10/PYTHON-PROGRAMS.git
+cd PYTHON-PROGRAMS/
+git diff
+git add *
+git status
+git commit -m "new file add"
+git config --global user.email "janavipatel1096@gmail.com"
+git config --global user.name "janavi patel"
+git commit -m "new file add"
+git push
