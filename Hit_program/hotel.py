@@ -1,21 +1,70 @@
+#Hotel Management System
 
-int_1 = 7
+x = "Hello, Welcome To My Hotel : AMIDHARA"
+y = 90
+z = x.center(y)
+print(z)
 
-str_1 = “Learn Python”
+print("1. Reservation - ")
+print("2. Room Management - ")
+print("3. Empty and Full Room - ")
+print("4. Room service - ")
+print("5. Restaurant - ")
+print("6. Billing - ")
+print("7. Pyment Method - ")
+print("8. Guest Record - ", end = "\n\n")
 
-list_3 = [2, 4, 6]
+choice = int(input("Enter your choice :- "))
 
-print (“Is int_1 an integer?” + str (isinstance (int_1, int)))
+match choice:
+	case 1 :
 
-print (“Is int_1 a string?” + str (isinstance (int_1, str)))
+		print("Your Select Option is :- Reservation ", end = "\n\n")
+		print("Room Type")
+		print("1. AC Room")
+		print("2. Non - AC Room", end = "\n\n")
+		room_price = int(input("What do you want  shaw room price ? "))
 
-print (“Is str_1 a string?” + str (isinstance (str_1, str)))
+		match room_price:
+				
+			case 1:
+				print("price =  1. AC Room :- 2000(1 day)")
+				print("price =  2. Non - AC Room :- 1700(1 day)", end = "\n\n")
+			
+		room_type = int(input("Plese Select Your Room Types :- "))
+		
+		match room_type:
+			case 1 : 
+				print("You are select a AC Room ", end = "\n\n")
+			case 2 :
+				print("You are select a Non - AC room ", end = "\n\n")
 
-print (“Is list_1 an integer?” + str (isinstance (list_1, int)))
+		class guest():
+			Name = ""
+			Age = ""
+			Mobile_num = ""
+			Email_add = ""
+			Goverment_id_proof_num = ""
 
-print (“Is list_1 a list?” + str (isinstance (list_1, list)))
+			def __init__(self, Name, Age, Mobile_num, Email_add, Goverment_id_proof_num):
+				self.Name = Name
+				self.Age = Age
+				self.Mobile_num = Mobile_num
+				self.Email_add = Email_add
+				self.Goverment_id_proof_num = Goverment_id_proof_num
 
-print (“Is int_1 integer or list or string?” + str (isinstance (int_1, (list, str, int))))
+			def get_details(self):
+				return f"Name : {self.Name}\nAge : {self.Age}\nMobile_num : {self.Mobile_num}\nEmail_add : {self.Email_add}\nGoverment_id_proof_num : {self.Goverment_id_proof_num}"
 
-print (“Is list_1 string or tuple?” + str (isinstance (list_1, (str, tuple))))
+		Name = input("\nEnter Your Name : ")
+		Age = input("Enter Your Age : ")
+		Mobile_num = input("Enter Your Mobile_num : ")
+		Email_add = input("Enter Your Email_add : ")
+		Goverment_id_proof_num = input("Enter Your Goverment_id_proof_num : ")
 
+
+		guest_detail = guest(Name, Age, Mobile_num, Email_add, Goverment_id_proof_num)
+		print("\nGuest details :- ")
+		print(guest_detail.get_details())
+
+		
