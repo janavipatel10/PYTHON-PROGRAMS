@@ -6,3 +6,5 @@ pi = 22 / 7 and 3.14
 
 area_of_circle = pi * pow(radius, 2)
 print(f"Area of circle is : {round(area_of_circle, 2)}")
+my new project
+my new project
